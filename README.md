@@ -83,6 +83,4 @@ Expected result: |00⟩ is about 50% and |11⟩ is about 50%, which shows superp
 |0⟩ ── H ──●── Measurement
           │
 |0⟩ ──────X── Measurement
-5. License and Credits
 
-The simulator source code is the QuantumLab project by rasidi3112 and its contributors, released under the MIT License. The copyright and license notice in LICENSE must be kept with the code.
