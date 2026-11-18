@@ -823,8 +823,8 @@ function animateStats() {
 
 console.log(
   `
-%c QuantumLab Pro %c
-%c The World's Most Advanced Quantum Computing Virtual Laboratory
+%c QuantumLab %c
+%c An educational quantum circuit simulator
 
 🔬 Features:
   • Build and simulate quantum circuits
@@ -832,8 +832,7 @@ console.log(
   • Explore famous quantum algorithms
   • Export to Qiskit, Cirq, Q#
 
-📚 Documentation: quantumlab.pro/docs
-🐛 Report Issues: github.com/quantumlab/issues
+Original project: github.com/rasidi3112/quantum-lab-circuit
 
 `,
   "background: linear-gradient(135deg, #00f5ff, #bf00ff); color: white; font-size: 20px; font-weight: bold; padding: 10px 20px; border-radius: 8px;",

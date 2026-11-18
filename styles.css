@@ -1,28 +1,28 @@
 :root {
-  --bg-primary: #0a0a0f;
-  --bg-secondary: #12121a;
-  --bg-tertiary: #1a1a25;
-  --bg-card: rgba(26, 26, 37, 0.8);
-  --bg-glass: rgba(26, 26, 37, 0.6);
+  --bg-primary: #111318;
+  --bg-secondary: #181b22;
+  --bg-tertiary: #222630;
+  --bg-card: rgba(34, 38, 48, 0.88);
+  --bg-glass: rgba(34, 38, 48, 0.76);
   --text-primary: #ffffff;
-  --text-secondary: #a0a0b0;
-  --text-muted: #606070;
-  --accent-cyan: #00f5ff;
-  --accent-purple: #bf00ff;
+  --text-secondary: #b8bdc9;
+  --text-muted: #858b98;
+  --accent-cyan: #ffbd69;
+  --accent-purple: #8eabff;
   --accent-blue: #3b82f6;
   --accent-pink: #ec4899;
   --accent-green: #10b981;
   --accent-orange: #f59e0b;
   --accent-red: #ef4444;
-  --gradient-primary: linear-gradient(135deg, #00f5ff 0%, #bf00ff 100%);
-  --gradient-secondary: linear-gradient(135deg, #3b82f6 0%, #8b5cf6 100%);
+  --gradient-primary: linear-gradient(120deg, #ffbd69 0%, #ff8c69 48%, #8eabff 100%);
+  --gradient-secondary: linear-gradient(135deg, #ee9850 0%, #718fe8 100%);
   --gradient-glow: radial-gradient(
     ellipse at center,
-    rgba(0, 245, 255, 0.15) 0%,
+    rgba(255, 189, 105, 0.15) 0%,
     transparent 70%
   );
   --border-color: rgba(255, 255, 255, 0.08);
-  --border-glow: rgba(0, 245, 255, 0.3);
+  --border-glow: rgba(255, 189, 105, 0.32);
   --font-primary: "Inter", -apple-system, BlinkMacSystemFont, sans-serif;
   --font-mono: "JetBrains Mono", "Fira Code", monospace;
   --spacing-xs: 0.25rem;
@@ -41,8 +41,8 @@
   --shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.3);
   --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.4);
   --shadow-lg: 0 8px 24px rgba(0, 0, 0, 0.5);
-  --shadow-glow: 0 0 40px rgba(0, 245, 255, 0.15);
-  --shadow-glow-purple: 0 0 40px rgba(191, 0, 255, 0.15);
+  --shadow-glow: 0 12px 42px rgba(255, 157, 92, 0.16);
+  --shadow-glow-purple: 0 12px 42px rgba(113, 143, 232, 0.18);
   --transition-fast: 150ms ease;
   --transition-base: 250ms ease;
   --transition-slow: 350ms ease;
@@ -282,6 +282,7 @@ img {
   padding: 8rem var(--spacing-xl) var(--spacing-3xl);
   position: relative;
   overflow: hidden;
+  background-image: radial-gradient(ellipse at 78% 42%, rgba(167, 139, 250, 0.09), transparent 38%);
 }
 .hero::before {
   content: "";
@@ -305,7 +306,7 @@ img {
   gap: var(--spacing-sm);
   padding: var(--spacing-xs) var(--spacing-md);
   background: var(--bg-glass);
-  border: 1px solid var(--border-color);
+  border: 1px solid rgba(114, 230, 195, 0.2);
   border-radius: var(--radius-full);
   font-size: 0.875rem;
   color: var(--text-secondary);
@@ -591,8 +592,8 @@ section {
   grid-column: span 2;
   background: linear-gradient(
     135deg,
-    rgba(0, 245, 255, 0.1) 0%,
-    rgba(191, 0, 255, 0.1) 100%
+    rgba(114, 230, 195, 0.1) 0%,
+    rgba(167, 139, 250, 0.1) 100%
   );
   border-color: var(--border-glow);
 }
@@ -2194,4 +2195,129 @@ section {
     padding: var(--spacing-sm) var(--spacing-md);
     font-size: 0.875rem;
   }
+}
+
+/* QuantumLab visual refresh: warm amber and periwinkle on graphite */
+body {
+  background-image:
+    radial-gradient(ellipse at 12% 8%, rgba(255, 157, 92, 0.075), transparent 28rem),
+    radial-gradient(ellipse at 88% 30%, rgba(113, 143, 232, 0.075), transparent 32rem);
+  background-attachment: fixed;
+}
+#particle-canvas {
+  opacity: 0.22;
+}
+.navbar,
+.navbar.scrolled {
+  background: rgba(17, 19, 24, 0.88);
+  border-bottom-color: rgba(255, 189, 105, 0.12);
+}
+.nav-links a:hover,
+.nav-links a.active {
+  color: #ffcf8b;
+}
+.nav-links a::after {
+  background: linear-gradient(90deg, #ffbd69, #8eabff);
+}
+.hero {
+  background-image: radial-gradient(ellipse at 78% 42%, rgba(142, 171, 255, 0.13), transparent 40%);
+}
+.hero::before {
+  background: radial-gradient(ellipse at 22% 52%, rgba(255, 157, 92, 0.12), transparent 62%);
+}
+.hero-badge,
+.section-tag {
+  background: rgba(255, 189, 105, 0.07);
+  border-color: rgba(255, 189, 105, 0.22);
+  color: #ffd29b;
+}
+.badge-dot {
+  background: #ffbd69;
+  box-shadow: 0 0 12px rgba(255, 189, 105, 0.7);
+}
+.hero-title {
+  letter-spacing: -0.045em;
+}
+.hero-description,
+.section-description {
+  color: #b8bdc9;
+}
+.stat-value,
+.stat-suffix {
+  filter: drop-shadow(0 5px 18px rgba(255, 157, 92, 0.14));
+}
+.btn-primary {
+  color: #191714;
+  box-shadow: 0 8px 24px rgba(255, 157, 92, 0.12);
+}
+.btn-outline {
+  border-color: rgba(142, 171, 255, 0.28);
+}
+.btn-outline:hover {
+  border-color: #8eabff;
+  background: rgba(142, 171, 255, 0.1);
+  box-shadow: 0 0 28px rgba(113, 143, 232, 0.16);
+}
+.features,
+.scope-section,
+.simulator-section,
+.algorithms-section,
+.visualizer-section,
+.learn-section,
+.export-section {
+  background-color: rgba(24, 27, 34, 0.72);
+}
+.feature-card,
+.scope-card,
+.algorithm-card,
+.course-card,
+.export-card {
+  background-color: rgba(29, 33, 42, 0.88);
+  border-color: rgba(255, 255, 255, 0.085);
+  border-radius: 1.1rem;
+  box-shadow: 0 14px 36px rgba(0, 0, 0, 0.18);
+}
+.feature-card:hover,
+.scope-card:hover,
+.algorithm-card:hover,
+.course-card:hover,
+.export-card:hover {
+  border-color: rgba(255, 189, 105, 0.38);
+  box-shadow: 0 18px 44px rgba(0, 0, 0, 0.28), 0 0 26px rgba(255, 157, 92, 0.08);
+}
+.feature-card.featured {
+  background: linear-gradient(135deg, rgba(255, 189, 105, 0.12), rgba(142, 171, 255, 0.1));
+  border-color: rgba(255, 189, 105, 0.34);
+}
+.feature-icon,
+.course-icon {
+  background: linear-gradient(145deg, rgba(255, 189, 105, 0.14), rgba(142, 171, 255, 0.13));
+  border: 1px solid rgba(255, 255, 255, 0.07);
+}
+.simulator-toolbar,
+.gates-panel,
+.results-panel,
+.visualizer-container {
+  background-color: #191d26;
+  border-color: rgba(255, 255, 255, 0.09);
+}
+.tool-btn:hover,
+.tool-btn.active,
+.gate-item:hover,
+.gate-btn:hover {
+  border-color: rgba(255, 189, 105, 0.48);
+  background-color: rgba(255, 189, 105, 0.1);
+}
+.tool-btn.active,
+.gate-symbol,
+.section-tag,
+.course-number {
+  color: #ffbd69;
+}
+.section-title {
+  letter-spacing: -0.035em;
+}
+::selection {
+  color: #171719;
+  background: #ffbd69;
 }
