@@ -51,7 +51,7 @@ Get the project files using either method:
 Download the project as a ZIP file and extract it to a folder, or
 Clone it:
 bash
-git clone https://github.com/rasidi3112/quantum-lab-circuit.git
+git clone https://github.com/shahvez-khan/Quantum-Circuit-Simulator.git
 cd quantum-lab-circuit
 Check that the project folder contains index.html, styles.css, quantum-engine.js, visualizer.js, app.js, learn.js and the assets folder, and keep them in the same folder structure.
 4. Execution Procedure
